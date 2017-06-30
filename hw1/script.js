@@ -1,4 +1,5 @@
 alert ("Hello Friend! from master")
+
 res1 = confirm("Do you wanna play?")
 if (res1){
     var user_details = []
