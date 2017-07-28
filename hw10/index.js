@@ -1,6 +1,18 @@
-document.getElementById('draw').onclick = draw;
-document.getElementById('pass').onclick = pass;
-document.getElementById('show').onclick = show
+// document.getElementById('draw').onclick = draw;
+// document.getElementById('pass').onclick = pass;
+// document.getElementById('show').onclick = show
+
+let drawElt = document.getElementById("draw")
+const drawClick = function(event) {draw()}
+drawElt.addEventListener("click", drawClick)
+
+let passElt = document.getElementById('pass')
+const passClick = function(event) {pass()}
+passElt.addEventListener("click", passClick)
+
+let showElt = document.getElementById("show")
+const showClick = function(event) {show()}
+showElt.addEventListener("click", showClick)
 
 function draw() {
   let nbr = Math.floor(Math.random() * 11) + 1
