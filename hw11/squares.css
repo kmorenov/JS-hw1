@@ -1,0 +1,39 @@
+body {
+  font-family: sans-serif;
+}
+
+#controlPanel {
+  float: left;
+  padding-top: 60px;
+}
+
+.card {
+  background-color: gray;
+  color: white;
+  border-radius: 10px; 
+  padding: 20px;
+  text-align: center;
+  margin: 90px 40px;
+  cursor: pointer;
+}
+
+#square {
+  height: 10px;
+  width: 10px;
+  float: left;
+  background-color: whitesmoke;
+  /* border-radius: 5px; */
+  margin: 50px 0;
+  padding: 20px;
+  content: "Player"
+}
+
+#score{
+  height: 10px;
+  width: 10px;
+  float: left;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  margin: 50px 0;
+  padding: 20px;
+}
