@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework 12</title>
+    <link rel="stylesheet" href="./validation.css">
+</head>
+<body>
+
+    <form action="" id="login">
+        <table>
+            <tr><td><span id="usernameError" class="validation"></span></td></tr>
+            <tr><td><label for="username">Username: </label></td>
+            <td><input type="text" id="username" name="username"/></td></tr>
+            <tr><td><span id="passwordError" class="validation"></span></td></tr>
+            <tr><td><label for="password">Password:</label></td>
+            <td><input type="password" id="password" name="password"/></td></tr>
+            <tr><td><span id="phoneError" class="validation"></span></td></tr>
+            <tr><td>Phone:</td><td><input type="text" id="phone" name="phone"/></td></tr>
+            <tr><td><span id="emailError" class="validation"></span></td></tr>
+            <tr><td>Email:</td><td><input type="text" id="email" name="email"/></td></tr>
+            <tr><td></td><td><button id="submit" type="submit">Login</button></td></tr>
+        </table>        
+    </form>
+   <script src="./index.js" defer></script>
+</body>
+</html>
