@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app"></div>
+<script src="node_modules/react/umd/react.development.js"></script>
+<script src="node_modules/react-dom/umd/react-dom.development.js"></script>
+<script>
+/*    import React from 'react';
+    import ReactDOM from 'react-dom';*/
+    const secondComponent = (props) => {
+        console.log(props)
+        return React.createElement('div', null,
+            React.createElement('h2', {style: {'fontSize': props.fontSize, 'color' : props.color}}, 'Second component')
+        );
+    };
+
+    const firstComponent = () => {
+        return React.createElement('div', null,
+            React.createElement('h1', null, `KM's first component!!!`),
+            React.createElement(secondComponent, {fontSize: 18, color: 'red'}),
+            React.createElement(secondComponent, {fontSize: 16, color: 'blue'}),
+            React.createElement(secondComponent, {fontSize: 14, color: 'grey'}),
+        );
+    };
+
+    ReactDOM.render(
+        React.createElement(firstComponent),
+        document.getElementById('app'),
+    )
+    ;
+</script>
+
+</body>
+</html>
