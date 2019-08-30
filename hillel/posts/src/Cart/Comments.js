@@ -7,7 +7,7 @@ export default function Comments({
                                  }) {
 
     return <>
-        <div className="row" onClick={() => alert('Hello Comment')}>
+        <div className="row">
             {
                 comments.map(comment => {
 
